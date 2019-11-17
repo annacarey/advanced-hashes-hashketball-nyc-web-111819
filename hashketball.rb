@@ -176,6 +176,7 @@ def player_numers(team_name)
     end 
   end
 end 
+return jerseys
 end 
 
 
