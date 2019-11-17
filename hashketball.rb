@@ -237,6 +237,7 @@ def winning_team
       winning_team = team[:team_name]
     end 
 end 
+p total 
 return winning_team
 end 
 
