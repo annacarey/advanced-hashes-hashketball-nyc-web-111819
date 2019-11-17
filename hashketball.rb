@@ -224,7 +224,7 @@ end
 
 def winning_team
   game = game_hash
-  winning_team = ""
+  winning_team = game[:home][:team_name]
   total = 0
   game.each do |one, team|
     first_total = 0
@@ -235,8 +235,6 @@ def winning_team
       total=first_total
     elsif first_total > total  
       winning_team = team[:team_name]
-    else 
-      
     end 
 end 
 return winning_team
