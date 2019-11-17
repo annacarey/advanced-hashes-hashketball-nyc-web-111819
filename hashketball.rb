@@ -231,7 +231,7 @@ def winning_team
     team[:players].each do |player|
      first_total += player[:points]
     end
-    p total 
+    total=first_total
 end 
 end 
 
