@@ -231,7 +231,12 @@ def winning_team
     team[:players].each do |player|
      first_total += player[:points]
     end
-    total=first_total
+    if total == 0 
+      total=first_total
+    elsif 
+    total < first_total 
+      return team[:team_name]
+    end 
 end 
 end 
 
