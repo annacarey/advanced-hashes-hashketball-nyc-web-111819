@@ -222,6 +222,17 @@ end
 return best_player
 end 
 
+def winning_team
+  game = game_hash
+  winning_team = ""
+  total = 0
+  game.each do |one, team|
+    temp_total = 0
+    team[:players].each do |player|
+      total += player[:points]
+  end
+end 
+end 
 
 
 
