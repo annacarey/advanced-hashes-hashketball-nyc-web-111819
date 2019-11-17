@@ -167,6 +167,8 @@ def team_names
 end
 
 def player_numers(team_name)
+  game = game_hash
+  jerseys = []
   
 end 
 
