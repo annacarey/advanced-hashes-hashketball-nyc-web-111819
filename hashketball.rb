@@ -163,7 +163,7 @@ def team_names
   game.each do |one, team|
     teams << team[:team_name]
   end
-  return team
+  return teams
 end
 
 
