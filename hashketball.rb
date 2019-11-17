@@ -227,11 +227,10 @@ def winning_team
   winning_team = ""
   total = 0
   game.each do |one, team|
-    temp_total = 0
     team[:players].each do |player|
-      temp_total += player[:points]
-  end
-  total = temp_total
+      total += player[:points]
+    end
+    p total 
 end 
 end 
 
