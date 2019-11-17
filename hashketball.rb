@@ -172,7 +172,7 @@ def player_numbers(team_name)
   game.each do |one, team|
     if team[:team_name] == team_name
       team[:players].each do |player|
-        jerseys << team[:number]
+        jerseys << player[:number]
     end 
   end
 end 
