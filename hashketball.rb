@@ -179,6 +179,19 @@ end
 return jerseys
 end 
 
+def player_stats(player_name)
+  game = game_hash
+  stats = {}
+  game.each do |one, team|
+    team[:players].each do |player|
+      if player[:player_name] == player_name
+        stats = player
+      end 
+  end
+end 
+return stats
+end 
+
 
 
 
