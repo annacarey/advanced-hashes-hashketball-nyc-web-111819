@@ -197,7 +197,7 @@ def big_shoe_rebounds
   bigger_shoe = game[:home][:players][0]
   game.each do |one, team|
     team[:players].each do |player|
-      if player[:player_name] == player_name
+      if player[:shoe] > player_name
         player.delete(:player_name)
         return player 
       end 
