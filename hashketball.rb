@@ -137,7 +137,7 @@ def num_points_scored(player_name)
   end 
 end
 
-def show_size
+def shoe_size
   game = game_hash
   game.each do |one, team|
     team[:players].each do |player|
