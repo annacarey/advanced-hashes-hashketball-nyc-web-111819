@@ -255,7 +255,12 @@ end
 
 def longest_name_steals_a_ton
   longest_name = player_with-longest_name 
-  
+  game = game_hash
+  game.each do |one, team|
+    team[:players].each do |player|
+      if player[:steals] > game[]
+  end
+end
 end 
 
 
