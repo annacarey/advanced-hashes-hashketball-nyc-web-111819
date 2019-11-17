@@ -267,7 +267,7 @@ end
   game.each do |one, team|
     team[:players].each do |player|
       if player[:steals] > longest_name_steals
-        return false 
+        return true 
       end 
     end
   end 
