@@ -194,15 +194,17 @@ end
 
 def big_shoe_rebounds
   game = game_hash
-  bigger_shoe = game[:home][:players][0]
+  bigger_shoe = game[:home][:players][0][:shoe]
+  rebounds = 0
   game.each do |one, team|
     team[:players].each do |player|
-      if player[:shoe] > player_name
-        player.delete(:player_name)
-        return player 
+      if player[:shoe] > bigger_shoe
+        bigger_shoe = player[:shoe]
+        rebounds = player[:rebounds]
       end 
   end
 end 
+return rebounds
 end 
 
 
