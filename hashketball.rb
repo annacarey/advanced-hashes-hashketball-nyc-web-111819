@@ -240,6 +240,19 @@ end
 return winning_team
 end 
 
+def player_with_longest_name
+game = game_hash
+  longest_name = game[:home][:players][0][:player_name]
+  game.each do |one, team|
+    team[:players].each do |player|
+      if player[:player_name].length > longest_name.length
+        longest_name = player[:player_name]
+        best_player = player[:player_name]
+      end 
+  end
+end 
+return longest_name
+end 
 
 
 
