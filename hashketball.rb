@@ -229,8 +229,9 @@ def winning_team
   game.each do |one, team|
     temp_total = 0
     team[:players].each do |player|
-      total += player[:points]
+      temp_total += player[:points]
   end
+  total = temp_total
 end 
 end 
 
