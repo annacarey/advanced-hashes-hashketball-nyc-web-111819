@@ -166,7 +166,7 @@ def team_names
   return teams
 end
 
-def player_numers(team_name)
+def player_numbers(team_name)
   game = game_hash
   jerseys = []
   game.each do |one, team|
