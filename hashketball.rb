@@ -233,7 +233,7 @@ def winning_team
     end
     if total == 0 
       total=first_total
-    elsif total > first_total 
+    elsif first_total < total  
       winning_team = team[:team_name]
     end 
 end 
