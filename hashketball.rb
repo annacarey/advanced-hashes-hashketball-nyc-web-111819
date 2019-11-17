@@ -221,7 +221,6 @@ def most_points_scored
 end 
 return best_player
 end 
-end 
 
 
 
