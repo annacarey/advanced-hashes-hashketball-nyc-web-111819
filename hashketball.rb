@@ -247,7 +247,6 @@ game = game_hash
     team[:players].each do |player|
       if player[:player_name].length > longest_name.length
         longest_name = player[:player_name]
-        best_player = player[:player_name]
       end 
   end
 end 
