@@ -208,6 +208,19 @@ return rebounds
 end 
 
 def most_points_scored
+  game = game_hash
+  most_points = game[:home][:players][0][:points]
+  best_player = ""
+  game.each do |one, team|
+    team[:players].each do |player|
+      if player[:points] > most_points
+        most_points = player[:points]
+        best_player = player[player_name]
+      end 
+  end
+end 
+return best_player
+end 
 end 
 
 
